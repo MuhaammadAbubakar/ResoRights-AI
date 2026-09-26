@@ -1,0 +1,44 @@
+# ═══════════════════════════════════════════════════════════
+# ResoRights AI — Privacy & Security .gitignore
+# ═══════════════════════════════════════════════════════════
+
+# N8N Workflows & Sensitive Automation Data
+*.json
+!package.json
+ResoRights AI.json
+*.workflow.json
+
+# InfinityFree standalone bundle (local deployment only)
+infinityfree.html
+*infinityfree*
+
+# Environment variables & secrets
+.env
+.env.*
+*.env
+*.local
+*.key
+*.pem
+*.cert
+*.crt
+credentials/
+secrets/
+
+# System & OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# IDE & Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.agents/
+
+# Logs & Diagnostics
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

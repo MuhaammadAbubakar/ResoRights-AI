@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResoRights AI — Understand Your Rights. Know Your Next Steps.</title>
+  <meta name="description" content="ResoRights AI helps California residents navigate housing, consumer, debt, and scam-related issues with clear, plain-English explanations of the law." />
+  <meta name="theme-color" content="#0D2B4E" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <!-- Fonts preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ══ PAGE CURTAIN (transition overlay) ═══════════════════ -->
+<div id="page-curtain" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════════════════ -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+
+    <!-- Wordmark + logo mark -->
+    <a href="#" class="nav-wordmark" id="nav-wordmark-link">
+      <span class="nav-logo-mark" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="7" fill="#0D2B4E" stroke="#2563EB" stroke-width="1.6"/>
+          <line x1="16" y1="5" x2="16" y2="27" stroke="white" stroke-width="1.7" stroke-linecap="round"/>
+          <line x1="8" y1="9.5" x2="24" y2="9.5" stroke="white" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M8 9.5 Q5.5 16 8 18.5 Q10.5 18.5 12.5 16 Q14 13 12 9.5" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M24 9.5 Q21.5 17 24 19.5 Q26.5 19.5 28.5 17 Q30 14 28 9.5" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="12.5" y1="27" x2="19.5" y2="27" stroke="white" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>
+      </span>
+      ResoRights AI
+    </a>
+
+    <!-- Nav links -->
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="#landing-page" id="nav-home-link">Home</a></li>
+      <li><a href="#supported-issues">Supported Issues</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+    <button class="btn btn-primary nav-cta" id="nav-start-case">
+      Start a Case
+    </button>
+
+    <!-- Mobile hamburger -->
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6"  x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     LANDING PAGE
+══════════════════════════════════════════════════════════ -->
+<div id="landing-page">
+
+  <!-- ── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-content">
+
+      <div class="hero-eyebrow-pill" aria-label="California Rights and Information">
+        California Rights &amp; Information
+      </div>
+
+      <h1 id="hero-heading">
+        Understand your rights.<br>
+        <span class="hero-animated-wrap"><em id="hero-animated-subheading">Know your next steps.</em><span class="hero-cursor" aria-hidden="true">|</span></span>
+      </h1>
+
+      <p class="hero-sub">
+        Clear California legal guidance and actionable next steps for tenant, consumer, and debt disputes — simplified in plain English.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-lg" id="hero-start-btn" aria-label="Tell us what happened to get started">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          Tell me what happened
+        </button>
+        <a href="#supported-issues" class="btn btn-ghost">
+          See supported issues →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── SUPPORTED ISSUES ──────────────────────────────────── -->
+  <section id="supported-issues" aria-labelledby="issues-heading">
+    <div class="section-wrap">
+      <div class="section-label-row">
+        <span class="eyebrow">Supported Issues</span>
+        <h2 id="issues-heading">Areas we can help with</h2>
+        <p>ResoRights AI currently covers four categories of California consumer and tenant rights law.</p>
+      </div>
+
+      <div class="issues-grid">
+
+        <!-- Housing -->
+        <div class="issue-card housing" tabindex="0" role="button" aria-label="Start a housing case" onclick="startCaseWithCategory('Housing')">
+          <div class="issue-card-accent"></div>
+          <div class="issue-card-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/>
+            </svg>
+          </div>
+          <div class="issue-card-label"><span>Housing</span></div>
+          <ul>
+            <li>Security deposit disputes</li>
+            <li>Habitability &amp; repair issues</li>
+            <li>Eviction / lockout notices</li>
+          </ul>
+          <div class="issue-card-cta">Start a case →</div>
+        </div>
+
+        <!-- Credit & Debt -->
+        <div class="issue-card credit" tabindex="0" role="button" aria-label="Start a credit and debt case" onclick="startCaseWithCategory('Credit & Debt')">
+          <div class="issue-card-accent"></div>
+          <div class="issue-card-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"/>
+            </svg>
+          </div>
+          <div class="issue-card-label"><span>Credit &amp; Debt</span></div>
+          <ul>
+            <li>Wrong account on credit report</li>
+            <li>Debt you do not owe</li>
+            <li>Debt collector harassment</li>
+          </ul>
+          <div class="issue-card-cta">Start a case →</div>
+        </div>
+
+        <!-- Consumer -->
+        <div class="issue-card consumer" tabindex="0" role="button" aria-label="Start a consumer case" onclick="startCaseWithCategory('Consumer')">
+          <div class="issue-card-accent"></div>
+          <div class="issue-card-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z"/>
+            </svg>
+          </div>
+          <div class="issue-card-label"><span>Consumer</span></div>
+          <ul>
+            <li>Product not delivered</li>
+            <li>Defective product / refund</li>
+            <li>Service provider disputes</li>
+          </ul>
+          <div class="issue-card-cta">Start a case →</div>
+        </div>
+
+        <!-- Scams & Fraud -->
+        <div class="issue-card scam" tabindex="0" role="button" aria-label="Start a scams and fraud case" onclick="startCaseWithCategory('Scams & Fraud')">
+          <div class="issue-card-accent"></div>
+          <div class="issue-card-icon-wrap">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/>
+            </svg>
+          </div>
+          <div class="issue-card-label"><span>Scams &amp; Fraud</span></div>
+          <ul>
+            <li>Bank impersonation scams</li>
+            <li>Government impersonation</li>
+            <li>Online shopping scams</li>
+          </ul>
+          <div class="issue-card-cta">Start a case →</div>
+        </div>
+
+      </div>
+
+      <div style="margin-top:var(--s5);text-align:center;">
+        <button class="btn btn-primary btn-lg" id="hero-start-btn-2">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+          Tell me what happened
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ──────────────────────────────────────── -->
+  <section id="how-it-works" aria-labelledby="hiw-heading">
+    <div class="section-wrap">
+      <div class="section-label-row">
+        <span class="eyebrow">How It Works</span>
+        <h2 id="hiw-heading">Three steps from confusion to clarity</h2>
+        <p>No legal jargon. No account required. Start in plain English.</p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Step 01 -->
+        <div class="step">
+          <div class="step-num">01</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h8M8 16h5M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>
+          </svg>
+          <h3>Describe your problem</h3>
+          <p>Tell ResoRights AI what happened in your own words. You don't need to know the legal category or any terminology.</p>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="step">
+          <div class="step-num">02</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path stroke-linecap="round" d="m21 21-4.35-4.35"/>
+          </svg>
+          <h3>Understand the relevant information</h3>
+          <p>ResoRights AI identifies your issue and surfaces applicable California statutes and your rights — in plain English.</p>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="step">
+          <div class="step-num">03</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9 2 2 4-4"/>
+          </svg>
+          <h3>Keep your case organized</h3>
+          <p>Your conversation history stays organized so you always know where you stand and can pick up where you left off.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────────── -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="section-wrap" style="max-width:760px;">
+      <div class="section-label-row">
+        <span class="eyebrow">About ResoRights AI</span>
+        <h2 id="about-heading">What ResoRights AI is — and isn't</h2>
+      </div>
+      <p style="font-size:15px;color:var(--text-secondary);line-height:1.72;margin-bottom:var(--s2);">
+        ResoRights AI is a legal information resource, not a law firm. It provides general information about California law and does not constitute legal advice, create an attorney-client relationship, or substitute for the advice of a licensed attorney.
+      </p>
+      <p style="font-size:15px;color:var(--text-secondary);line-height:1.72;margin-bottom:var(--s3);">
+        If your situation involves active litigation, is time-sensitive, or you are unsure about your rights, we encourage you to contact a licensed California attorney or a legal aid organization in your area.
+      </p>
+      <div class="about-note">
+        <strong>California Legal Aid resources:</strong><br>
+        <a href="https://www.lawhelpcalifornia.org" target="_blank" rel="noopener">LawHelpCalifornia.org</a> ·
+        <a href="https://www.baylegal.org" target="_blank" rel="noopener">Bay Area Legal Aid</a> ·
+        <a href="https://bettzedek.org" target="_blank" rel="noopener">Bet Tzedek Legal Services</a> ·
+        <a href="https://www.lassd.org" target="_blank" rel="noopener">Legal Aid Society of San Diego</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-wordmark" id="footer-logo">
+          <span class="nav-logo-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="7" fill="#0D2B4E" stroke="#2563EB" stroke-width="1.6"/>
+              <line x1="16" y1="5" x2="16" y2="27" stroke="white" stroke-width="1.7" stroke-linecap="round"/>
+              <line x1="8" y1="9.5" x2="24" y2="9.5" stroke="white" stroke-width="1.7" stroke-linecap="round"/>
+              <path d="M8 9.5 Q5.5 16 8 18.5 Q10.5 18.5 12.5 16 Q14 13 12 9.5" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M24 9.5 Q21.5 17 24 19.5 Q26.5 19.5 28.5 17 Q30 14 28 9.5" fill="none" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="12.5" y1="27" x2="19.5" y2="27" stroke="white" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+          </span>
+          ResoRights AI
+        </a>
+        <p>General legal information for California residents.<br>Not a law firm. Not legal advice.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#landing-page" id="footer-home-link">Home</a></li>
+            <li><a href="#supported-issues">Supported Issues</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#" id="footer-start-case">Start a Case</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://leginfo.legislature.ca.gov" target="_blank" rel="noopener">California Law (leginfo)</a></li>
+            <li><a href="https://www.dca.ca.gov" target="_blank" rel="noopener">CA Dept. of Consumer Affairs</a></li>
+            <li><a href="https://oag.ca.gov" target="_blank" rel="noopener">CA Attorney General</a></li>
+            <li><a href="https://www.lawhelpcalifornia.org" target="_blank" rel="noopener">LawHelp California</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#about">Disclaimer</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 ResoRights AI. Provides general legal information only — not legal advice. For California residents.</p>
+    </div>
+  </footer>
+
+</div><!-- /#landing-page -->
+
+
+<!-- ══════════════════════════════════════════════════════════
+     CHAT PAGE
+══════════════════════════════════════════════════════════ -->
+<div id="chat-page" role="main">
+
+  <!-- Sidebar overlay (mobile) -->
+  <div class="sidebar-overlay" id="sidebar-overlay" aria-hidden="true"></div>
+
+  <!-- ── SIDEBAR ────────────────────────────────────────────── -->
+  <aside class="sidebar" id="sidebar" role="complementary" aria-label="Case navigation">
+    <div class="sidebar-top">
+      <button class="btn btn-primary btn-new-case" id="new-case-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+        New Case
+      </button>
+    </div>
+
+    <div class="sidebar-section-label">Conversations</div>
+    <div class="case-list" id="case-list" role="list" aria-label="Your cases"></div>
+  </aside>
+
+  <!-- ── CHAT MAIN ──────────────────────────────────────────── -->
+  <section class="chat-main" aria-label="Conversation">
+
+    <header class="chat-header">
+      <!-- Sidebar collapse / expand toggle button -->
+      <button class="sidebar-toggle-btn" id="sidebar-toggle-btn" aria-label="Toggle sidebar" title="Toggle sidebar">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+          <line x1="9" y1="3" x2="9" y2="21"/>
+        </svg>
+      </button>
+
+      <!-- Centered Assistant Title and Highlighted Disclaimer Pill -->
+      <div class="chat-header-center">
+        <span class="chat-header-title">ResoRights AI Assistant</span>
+        <div class="chat-header-disclaimer-pill" role="note">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          Information provided is for general purposes only and is not legal advice.
+        </div>
+      </div>
+
+      <!-- Right spacer for optical balance -->
+      <div class="chat-header-spacer" aria-hidden="true"></div>
+    </header>
+
+    <!-- Conversation -->
+    <div class="conversation" id="conversation" role="log" aria-live="polite" aria-label="Messages"></div>
+
+    <!-- Input area -->
+    <div class="input-area">
+      <div class="input-row">
+        <textarea
+          class="chat-textarea"
+          id="chat-textarea"
+          placeholder="Describe your situation in your own words..."
+          rows="1"
+          aria-label="Describe your situation"
+          maxlength="4000"
+        ></textarea>
+        <button class="send-btn" id="send-btn" aria-label="Send message" disabled>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round">
+            <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+      <div class="suggestions" id="suggestions" role="list" aria-label="Suggested prompts"></div>
+    </div>
+  </section>
+
+</div><!-- /#chat-page -->
+
+
+<!-- ══════════════════════════════════════════════════════════
+     SETTINGS MODAL
+══════════════════════════════════════════════════════════ -->
+<div class="modal-overlay" id="settings-modal" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 id="settings-title">Settings</h3>
+      <button class="modal-close" id="settings-close" aria-label="Close settings">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M18 6 6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-field">
+        <label for="webhook-url">Automation Webhook URL</label>
+        <input type="url" id="webhook-url" placeholder="https://hook.make.com/your-webhook-id" autocomplete="off" />
+        <p>Paste your Make.com, Zapier, or n8n webhook URL here. When set, all messages are sent to your automation for processing.</p>
+      </div>
+      <div class="modal-field">
+        <label for="response-field">Response JSON field name</label>
+        <input type="text" id="response-field" placeholder="response" value="response" />
+        <p>The field name in your webhook's JSON response that contains the assistant reply text (e.g. <code>response</code>, <code>message</code>, or <code>output</code>).</p>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary btn-sm" id="settings-cancel">Cancel</button>
+      <button class="btn btn-primary btn-sm" id="settings-save">Save Settings</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+
+<!-- Enable send button when textarea has content -->
+<script>
+  const _ta = document.getElementById('chat-textarea');
+  const _sb = document.getElementById('send-btn');
+  _ta?.addEventListener('input', () => { _sb.disabled = _ta.value.trim().length === 0; });
+</script>
+</body>
+</html>
